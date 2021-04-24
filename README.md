@@ -1,6 +1,6 @@
 ## Fedora Gnome Setup
 
-Some dotfiles, hardened configs, and a simple bash script to set up a fresh [Fedora Workstation](https://getfedora.org/en/workstation/) install. I run my system fairly lean so nothing fancy here. Removed a ton of bloatware and telemetry. Dotfiles may be of little use, but check out my configs for linux hardening.
+Some dotfiles, hardened configs, and a simple bash script to set up a fresh [Fedora Workstation](https://getfedora.org/en/workstation/). I run my system fairly lean so nothing fancy here. Removed a ton of bloatware and telemetry. Dotfiles may be of little use, but check out my configs for linux hardening.
 
 - Currently up to date with Fedora 33, Gnome 3.38
 - Tested OK with Gnome 40
