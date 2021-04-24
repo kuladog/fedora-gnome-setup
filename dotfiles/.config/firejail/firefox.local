@@ -1,0 +1,18 @@
+# ~/.config/firejail/firefox.local
+#
+# github.com/kuladog
+#
+
+# noexec ${HOME} breaks DRM binaries.
+?BROWSER_ALLOW_DRM: ignore noexec ${HOME}
+
+?BROWSER_DISABLE_U2F: nou2f
+
+caps.drop all
+disable-mnt
+machine-id
+netfilter
+nogroups
+nonewprivs
+noroot
+shell none

@@ -1,0 +1,7 @@
+# ~/.config/firejail/file-roller.local
+#
+# github.com/kuladog
+#
+
+net none
+protocol unix

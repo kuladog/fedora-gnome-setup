@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "What's your commit?"
+read COMMIT
+
+git add .
+git commit -m "$COMMIT"
+echo
+git push -u origin main

@@ -1,0 +1,79 @@
+# ~/.config/vlc/vlcrc
+#
+# github.com/kuladog
+#
+
+
+[access_alsa] # ALSA audio capture
+
+# Stereo (boolean)
+alsa-stereo=1
+
+# Sample rate (integer)
+alsa-samplerate=48000
+
+
+[core] # core program
+
+# Access module (string)
+access=none
+
+# Access output module (string)
+access_output=any
+
+# Audio resampler (string)
+audio-resampler=any
+
+# Mux module (string)
+mux=any
+
+# Video output module (string)
+vout=any
+
+# Text rendering module (string)
+text-renderer=any
+
+# Preferred packetizer list (string)
+packetizer=any
+
+# VoD server module (string)
+vod-server=none
+
+# Scan for new plugins (boolean)
+plugins-scan=0
+
+# Play and stop (boolean)
+play-and-stop=1
+
+# Play and stop (boolean)
+play-and-stop=1
+
+# Auto start (boolean)
+playlist-autostart=1
+
+# Allow only one running instance (boolean)
+one-instance=1
+
+# Use only one instance when started from file manager (boolean)
+one-instance-when-started-from-file=1
+
+# Enqueue items into playlist in one instance mode (boolean)
+playlist-enqueue=0
+
+# Allow metadata network access (boolean)
+metadata-network-access=0
+
+# Show advanced options (boolean)
+advanced=1
+
+# Locally collect statistics (boolean)
+stats=0
+
+
+[file] # File logger
+
+# Log to file (boolean)
+file-logging=0
+
+
+

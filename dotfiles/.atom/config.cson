@@ -1,0 +1,16 @@
+"*":
+  core:
+    audioBeep: false
+    telemetryConsent: "no"
+    disabledPackages: [
+      "sync-settings"
+    ]
+    themes: [
+      "one-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    fontSize: 15
+    tabLength: 4
+  welcome:
+    showOnStartup: false

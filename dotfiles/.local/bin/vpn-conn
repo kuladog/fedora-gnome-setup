@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+RUN="1 minute"
+END=$(date -ud "$RUN" +%s)
+
+# check connection, enable vpn if good
+while [ "$(date -u +%s)" -le "$END" ]; do
+  ping -c 3 1.1.1.1 &> /dev/null
+  if [ "$?" = 0 ]; then
+    nordvpn c CA
+    break
+  else
+    continue
+  fi
+done

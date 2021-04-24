@@ -1,0 +1,22 @@
+# /etc/sudoers.d/local-sudo
+#
+# github.com/kuladog
+#
+
+Defaults  env_reset
+Defaults  secure_path = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Defaults  timestamp_timeout=60
+Defaults  umask=0027
+Defaults  umask_override
+Defaults  use_pty
+
+root ALL=(ALL) ALL
+%wheel ALL=(ALL) ALL
+
+Cmnd_Alias DNF = /usr/bin/dnf
+Cmnd_Alias REBOOT = /sbin/reboot ""
+Cmnd_Alias SHUTDOWN = /sbin/poweroff ""
+
+<user> ALL=(root) NOPASSWD: DNF
+<user> ALL=(root) NOPASSWD: REBOOT
+<user> ALL=(root) NOPASSWD: SHUTDOWN

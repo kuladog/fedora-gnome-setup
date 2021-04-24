@@ -1,0 +1,7 @@
+# ~/.config/firejail/gthumb.local
+#
+# github.com/kuladog
+#
+
+net none
+protocol unix

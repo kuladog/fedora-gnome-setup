@@ -1,0 +1,12 @@
+# /etc/sysconfig/network
+#
+# github.com/kuladog
+#
+
+# no ipv6
+NETWORKING_IPV6=no
+IPV6INIT=no
+
+# no avahi
+NOZEROCONF=yes
+
