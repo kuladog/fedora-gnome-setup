@@ -119,6 +119,7 @@ if [[ -e $sysctlconf ]]; then
   sysctl -p "$sysctlconf"
 else
   echo "File '99-sysctl.conf' not found."
+fi
    
 
 # harden filesystem table
@@ -211,7 +212,7 @@ chmod -R 750 /home/"${USERNAME}"
 echo -e "\nEnable DNF security updates ..."
 
 dnfcheck=$(dnf list firejail &> /dev/null)
-if [[ $dnfcheck -eg 0 ]]; then
+if [[ $dnfcheck -eq 0 ]]; then
   systemctl enable --now dnf-automatic.timer
 else
   echo "Could not enable 'dnf-automatic'"
