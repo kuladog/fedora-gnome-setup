@@ -32,5 +32,5 @@ alias egrep='egrep --color=auto'
 
 # Get aliases and functions
 if [[ -f ${HOME}/.bash_aliases ]]; then
-	. "${HOME}/.bash_aliases"
+	. "${HOME}"/.bash_aliases
 fi
