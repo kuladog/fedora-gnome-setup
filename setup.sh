@@ -85,8 +85,13 @@ fi
 
 
 # update grub config
+eficheck=$(ls /sys/firmware/efi 2&> /dev/null)
 echo
-grub2-mkconfig -o /boot/grub2/grub.cfg
+if [[ $eficheck -eq 1 ]]; then
+  grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+else
+  grub2-mkconfig -o /boot/grub2/grub.cfg
+fi
 
 
 # configure /etc/hosts file
