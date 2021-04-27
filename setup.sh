@@ -52,12 +52,14 @@ dnf -y --setopt=install_weak_deps=False install \
 
 # install atom
 echo -e "\nInstalling Atom ..."
+
 curl -Lo atom-current.rpm https://atom.io/download/rpm
 rpm -i atom-current.rpm && rm atom-current.rpm
 
 
 # install nordvpn
 echo -e "\nInstalling NordVPN ..."
+
 sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 
 
@@ -85,9 +87,7 @@ fi
 
 
 # update grub config
-eficheck=$(ls /sys/firmware/efi 2&> /dev/null)
-echo
-if [[ $eficheck -eq 1 ]]; then
+if [[ -d /sys/firmware/efi ]]; then
   grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 else
   grub2-mkconfig -o /boot/grub2/grub.cfg
@@ -193,7 +193,7 @@ fi
 # load dconf settings
 echo -e "\nLoading Gnome settings ..."
 
-su - "$USERNAME" bash -c exit dconf load -f /org/gnome/ < dotfiles/.config/dconf/gnome.local
+su - "$USERNAME" bash -c exit dconf load -f /org/gnome/ < dotfiles/.config/dconf/gnome.conf
 if [[ $? -eq 0 ]]; then
   echo "done"
 else
