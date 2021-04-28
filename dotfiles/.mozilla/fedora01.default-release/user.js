@@ -1,7 +1,12 @@
 // ~/.mozilla/firefox/*.default-release/
 //
-// github.com/kuladog
+// github.com/kuladog/arch-xfce-hardened
 //
+//
+// Removed extensions from /usr/lib64/firefox/features
+//  - doh-rollout@mozilla.org.xpi
+//  - screenshots@mozilla.org.xpi
+//  - webcompat-reporter@mozilla.org.xpi
 //
 // Dumped user modified preferences, added no-telemetry tweaks
 //
@@ -24,7 +29,8 @@ user_pref("browser.download.viewableInternally.typeWasRegistered.xml", true);
 user_pref("browser.eme.ui.firstContentShown", true);
 user_pref("browser.engagement.downloads-button.has-used", true);
 user_pref("browser.engagement.home-button.has-used", true);
-user_pref("browser.formfill.enable", false);
+user_pref("browser.formfill.enable", true);
+user_pref("browser.gnome-search-provider.enabled", false);
 user_pref("browser.library.activity-stream.enabled", false);
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.useRemoteL10n", false);
@@ -46,15 +52,16 @@ user_pref("browser.newtabpage.activity-stream.showSearch", false);
 user_pref("browser.newtabpage.activity-stream.showSponsored", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
 user_pref("browser.newtabpage.enabled", false);
-user_pref("browser.newtabpage.pinned", "{\"url\":\"https://duckduckgo.com\",\"label\":\"@ddg\",\"searchTopSite\":false}");
+user_pref("browser.newtabpage.pinned", "{\"url\":\"https://duckduckgo.com/lite\",\"label\":\"@ddg\",\"searchTopSite\":false}");
 user_pref("browser.pageActions.persistedActions", "{\"version\":1,\"ids\":[\"bookmark\",\"pinTab\",\"bookmarkSeparator\",\"copyURL\",\"addSearchEngine\"],\"idsInUrlbar\":[\"bookmark\"]}");
 user_pref("browser.ping-centre.telemetry", false);
+user_pref("browser.policies.perUserDir", true);
 user_pref("browser.protections_panel.infoMessage.seen", true);
 user_pref("browser.rights.3.shown", true);
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.send_pings", false);
 user_pref("browser.send_pings.require_same_host", true);
-user_pref("browser.startup.homepage", "https://duckduckgo.com");
+user_pref("browser.startup.homepage", "https://duckduckgo.com/lite");
 user_pref("browser.toolbars.bookmarks.visibility", "never");
 user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-list\":[],\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"home-button\",\"customizableui-special-spring1\",\"urlbar-container\",\"bookmarks-menu-button\",\"downloads-button\",\"customizableui-special-spring2\",\"fxa-toolbar-menu-button\",\"jid1-mnnxcxisbpnsxq_jetpack-browser-action\",\"ublock0_raymondhill_net-browser-action\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"PersonalToolbar\":[\"personal-bookmarks\"]},\"seen\":[\"developer-button\",\"jid1-mnnxcxisbpnsxq_jetpack-browser-action\",\"ublock0_raymondhill_net-browser-action\"],\"dirtyAreaCache\":[\"nav-bar\",\"toolbar-menubar\",\"TabsToolbar\",\"PersonalToolbar\"],\"currentVersion\":16,\"newElementCount\":4}");
 user_pref("browser.uidensity", 1);
@@ -102,6 +109,7 @@ user_pref("extensions.ui.locale.hidden", true);
 user_pref("extensions.webcompat-reporter.enabled", false);
 user_pref("extensions.webextensions.protocol.remote", false);
 user_pref("extensions.webextensions.remote", false);
+user_pref("geo.wifi.uri", "");
 user_pref("identity.fxaccounts.commands.enabled", false);
 user_pref("identity.fxaccounts.enabled", false);
 user_pref("identity.fxaccounts.pairing.enabled", false);
