@@ -42,10 +42,10 @@ dnf -y --setopt=install_weak_deps=False install \
     firejail \
     gnome-shell-extension-dash-to-dock \
     gnome-tweaks \
-    moka-icon-theme \
+    papirus-icon-theme \
     redhat-lsb-core \
-    gthumb \
     hexchat \
+    shotwell \
     transmission-gtk \
     vim-enhanced \
     vlc
