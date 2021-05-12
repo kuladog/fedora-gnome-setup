@@ -27,6 +27,7 @@ echo -e "\nEnabling repositories ..."
 
 dnf -y install \
     distribution-gpg-keys \
+    fedora-gpg-keys \
     fedora-workstation-repositories \
     https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-"$(rpm -E %fedora)".noarch.rpm
 
