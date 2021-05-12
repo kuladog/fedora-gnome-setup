@@ -145,7 +145,7 @@ sed -i.bak \
 echo "/tmp	/var/tmp	none	nodev,nosuid,noexec,bind  0 0"
 echo "tmpfs	/tmp		tmpfs	nodev,nosuid,noexec	0 0"
 echo "tmpfs	/dev/shm	tmpfs	nodev,nosuid,noexec	0 0"
-echo "proc	/proc		proc	nodev,noexec,nosuid     0 0"
+echo "proc	/proc		proc	nodev,nosuid,noexec     0 0"
 } >> /etc/fstab
 
 if [[ $? -eq 0 ]]; then
