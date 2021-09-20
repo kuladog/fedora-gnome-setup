@@ -2,7 +2,7 @@
 
 Dotfiles, hardened configs, and a simple bash script to set up a fresh [Fedora Workstation](https://getfedora.org/en/workstation/). This will remove a ton of bloatware and telemetry, and install some basic programs and applications.
 
-Read through the [setup script](https://github.com/kuladog/fedora-gnome-setup/blob/main/setup.sh) to see what changes will be made and edit accordingly. Verify what you want to remove in [bloatware](https://github.com/kuladog/fedora-gnome-setup/blob/main/bloatware). You can edit, add, or remove files in `dotfiles` and `configs` to suit your needs.
+Read through the [setup script](https://github.com/kuladog/fedora-gnome-setup/blob/main/setup.sh) to see what changes will be made. Verify what you want to remove in [bloatware](https://github.com/kuladog/fedora-gnome-setup/blob/main/bloatware). You can edit, add, or remove files in `dotfiles` and `configs` to suit your needs.
 
 - Currently up to date with Fedora 33, Gnome 3.38
 - Tested OK with Gnome 40
